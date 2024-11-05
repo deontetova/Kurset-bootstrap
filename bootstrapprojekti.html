@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurset Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: gray
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#kreu">Kurset Online</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#kurset">Kurset</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertat">Ofertat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stafi">Stafi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakti">Kontakto</a></li>
+          <li class="nav-item"><button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#signUpModal">Regjistrohu</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="kreu" class="bg-dark text-light py-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="kursiprogramimit.png" class="d-block w-100" alt="Kursi i Programimit">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Kursi i Programimit</h3>
+            <p>Mëso bazat dhe avancimet në programim.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="kursiadobe.jpg" class="d-block w-100" alt="Kursi i Dizajnit Grafik">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Kursi i Dizajnit Grafik</h3>
+            <p>Zhvillo aftësitë në Adobe Photoshop dhe Illustrator.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="kursimarketing.jpg" class="d-block w-100" alt="Kursi i Marketingut Dixhital">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Kursi i Marketingut Dixhital</h3>
+            <p>Strategji dhe teknika për sukses në marketingun online.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <section id="kurset" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Kurset Tona</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="programimi.jpg" class="card-img-top" alt="Kursi i Programimit" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Programimit</h5>
+              <p class="card-text">Mëso programim nga zero në gjuhë si Python dhe JavaScript.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="grafik.jpg" class="card-img-top" alt="Kursi i Dizajnit Grafik" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Dizajnit Grafik</h5>
+              <p class="card-text">Mëso bazat e dizajnit grafik dhe krijo projekte të mrekullueshme.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="marketing.jpg" class="card-img-top" alt="Kursi i Marketingut Dixhital" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Marketingut Dixhital</h5>
+              <p class="card-text">Zhvillo njohuri në SEO, PPC dhe Social Media Marketing.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="menaxhimi.jpg" class="card-img-top" alt="Kursi i Menaxhimit të Projekteve" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Menaxhimit të Projekteve</h5>
+              <p class="card-text">Mëso të menaxhosh projekte në mënyrë efikase dhe të suksesshme.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="projektet.jpg" class="card-img-top" alt="Kursi i Ndërmarrjes" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Ndërmarrjes</h5>
+              <p class="card-text">Mëso të krijosh dhe menaxhosh një biznes të suksesshëm.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="shkenca.jpg" class="card-img-top" alt="Kursi i Shkencës së të Dhënave" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Kursi i Shkencës </h5>
+              <p class="card-text">Zhvillo aftësitë e tua në analizën dhe interpretimin e të dhënave.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="ofertat" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Ofertat Tona</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="oferta1.jpg" class="card-img-top" alt="Oferta 1" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Oferta 1</h5>
+              <p class="card-text">Kurs special me 30% zbritje për të rinjtë.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="oferta2.jpg" class="card-img-top" alt="Oferta 2" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Oferta 2</h5>
+              <p class="card-text">Merrni 2 kurse dhe paguani për 1.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="oferta3.png" class="card-img-top" alt="Oferta 3" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Oferta 3</h5>
+              <p class="card-text">Regjistrohu tani dhe merr një konsultim falas.</p>
+              <a href="#" class="btn btn-primary">Mëso më shumë</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stafi" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Stafi Ynë</h2>
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img src="pajtimi.png" class="card-img-top" alt="Anëtari i Stafit 1">
+            <div class="card-body">
+              <h5 class="card-title">Pajtimi</h5>
+              <p class="card-text">Pozita: Mësues Programimi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img src="albulena.jpg" class="card-img-top" alt="Anëtari i Stafit 2">
+            <div class="card-body">
+              <h5 class="card-title">Albina</h5>
+              <p class="card-text">Pozita: Dizajnere Grafike</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img src="driloni.jpg" class="card-img-top" alt="Anëtari i Stafit 3">
+            <div class="card-body">
+              <h5 class="card-title">Driloni</h5>
+              <p class="card-text">Pozita: Ekspert i Marketingut</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card h-100">
+            <img src="lindita.jpg" class="card-img-top" alt="Anëtari i Stafit 4">
+            <div class="card-body">
+              <h5 class="card-title">Lindita</h5>
+              <p class="card-text">Pozita: Menaxhere e Projekteve</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="kontakti" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Na Kontaktoni</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Emri</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Emaili</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mesazhi</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Dërgo</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signUpModalLabel">Regjistrohu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="modalName" class="form-label">Emri</label>
+              <input type="text" class="form-control" id="modalName" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalEmail" class="form-label">Emaili</label>
+              <input type="email" class="form-control" id="modalEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalPassword" class="form-label">Fjalëkalimi</label>
+              <input type="password" class="form-control" id="modalPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Regjistrohu</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Kurset Online. Të drejtat e rezervuara.</p>
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li class="mx-3"><a href="#" class="text-light">Rreth Nesh</a></li>
+      </ul>
+ 
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
